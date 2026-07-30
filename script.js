@@ -178,4 +178,13 @@ themeToggle.addEventListener("click", () => {
 
     }
 
-});
+}); 
+document.getElementById("cookie-banner").style.display = "flex";
+
+function acceptCookies() {
+  document.getElementById("cookie-banner").style.display = "none";
+}
+
+function declineCookies() {
+  document.getElementById("cookie-banner").style.display = "none";
+}
