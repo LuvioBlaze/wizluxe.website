@@ -1533,3 +1533,52 @@ body.dark-mode .contact-form textarea{
     transform:scale(1.1);
 
 }
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1100px;
+  background: #f8f3ea;
+  color: #333;
+  padding: 20px 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  z-index: 9999;
+}
+
+.cookie-banner p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.cookie-banner button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cookie-banner button:first-of-type {
+  background: #b08d57;
+  color: white;
+}
+
+.cookie-banner button:last-of-type {
+  background: transparent;
+  color: #b08d57;
+  border: 1px solid #b08d57;
+}
+
+@media(max-width:768px){
+  .cookie-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
