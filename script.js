@@ -304,3 +304,41 @@ faqQuestions.forEach(question => {
 
 
 });
+// =========================
+// GALLERY FILTER SYSTEM
+// =========================
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const galleryCards = document.querySelectorAll(".gallery-card");
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const filter = button.dataset.filter;
+
+
+        filterButtons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+
+        galleryCards.forEach(card => {
+
+            if (filter === "all" || card.classList.contains(filter)) {
+
+                card.style.display = "block";
+
+            } else {
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+});
