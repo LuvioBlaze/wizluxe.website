@@ -1810,3 +1810,46 @@ body.dark-mode .faq-answer p{
     }
 
 }
+/* ==========================
+   GALLERY FILTER BUTTONS
+========================== */
+
+.gallery-filter{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:40px;
+}
+
+
+.filter-btn{
+
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#fff;
+    color:#8b5e34;
+    border:2px solid #d4af37;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s ease;
+
+}
+
+
+.filter-btn:hover,
+.filter-btn.active{
+
+    background:#d4af37;
+    color:white;
+
+}
+
+
+.gallery-card{
+
+    transition:0.4s ease;
+
+}
