@@ -233,3 +233,4 @@ faqQuestions.forEach(question => {
         }
 
     });
+});
