@@ -1771,3 +1771,42 @@ body.dark-mode .faq-answer{
 body.dark-mode .faq-answer p{
     color:#ccc;
 }
+/* Final mobile size adjustment */
+
+@media(max-width:768px){
+
+    section{
+        padding:50px 20px;
+    }
+
+    .hero{
+        min-height:75vh;
+        padding:25px 15px;
+    }
+
+    .hero h2{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .about,
+    .services,
+    .gallery,
+    .stats,
+    .testimonials,
+    .contact,
+    .faq{
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+
+    .service-card,
+    .testimonial,
+    .stat-box{
+        padding:20px;
+    }
+
+}
