@@ -603,8 +603,8 @@ header{
 .whatsapp-float{
 
     position:fixed;
-    bottom:25px;
-    right:25px;
+    bottom:20px;
+    right:20px;
 
     width:65px;
     height:65px;
@@ -1498,7 +1498,7 @@ body.dark-mode .contact-form textarea{
 
     right:20px;
 
-    bottom:90px;
+    bottom:95px;
 
     width:60px;
 
@@ -1656,7 +1656,7 @@ body.dark-mode .why-box p{
 
 #backToTop{
     position: fixed;
-    bottom: 150px;
+    bottom: 170px;
     right: 20px;
     display: none;
     width: 50px;
@@ -1675,4 +1675,99 @@ body.dark-mode .why-box p{
 #backToTop:hover{
     background: #b8941f;
     transform: translateY(-5px);
+} 
+/* ===========================
+   FAQ SECTION
+=========================== */
+
+.faq{
+    padding:80px 10%;
+    background:#f8f8f8;
+}
+
+.faq h2{
+    text-align:center;
+    font-size:2.3rem;
+    margin-bottom:50px;
+    color:#222;
+}
+
+.faq-item{
+    background:#fff;
+    margin-bottom:18px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    border-left:5px solid #d4af37;
+}
+
+.faq-question{
+    width:100%;
+    background:none;
+    border:none;
+    padding:22px;
+    text-align:left;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    color:#222;
+    transition:.3s;
+}
+
+.faq-question:hover{
+    background:#fff8e6;
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+    background:#ffffff;
+}
+
+.faq-answer p{
+    padding:0 22px 22px;
+    color:#555;
+    line-height:1.8;
+}
+
+/* Dark Mode */
+
+body.dark-mode .faq{
+    background:#111;
+}
+
+body.dark-mode .faq h2{
+    color:#fff;
+}
+.faq-question::after{
+    content:"+";
+    float:right;
+    font-size:24px;
+    color:#d4af37;
+    transition:.3s;
+}
+
+.faq-question.active::after{
+    content:"−";
+}
+
+body.dark-mode .faq-item{
+    background:#1b1b1b;
+}
+
+body.dark-mode .faq-question{
+    color:#fff;
+}
+
+body.dark-mode .faq-question:hover{
+    background:#242424;
+}
+
+body.dark-mode .faq-answer{
+    background:#1b1b1b;
+}
+
+body.dark-mode .faq-answer p{
+    color:#ccc;
 }
