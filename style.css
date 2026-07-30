@@ -1853,3 +1853,33 @@ body.dark-mode .faq-answer p{
     transition:0.4s ease;
 
 }
+/* FORCE FLOATING ELEMENTS */
+
+.whatsapp-float{
+    position:fixed !important;
+    right:20px !important;
+    bottom:20px !important;
+    z-index:999999 !important;
+}
+
+.call-float{
+    position:fixed !important;
+    right:20px !important;
+    bottom:95px !important;
+    z-index:999999 !important;
+}
+
+#backToTop{
+    position:fixed !important;
+    right:20px !important;
+    bottom:170px !important;
+    z-index:999999 !important;
+}
+
+.cookie-banner{
+    position:fixed !important;
+    left:50% !important;
+    transform:translateX(-50%) !important;
+    bottom:20px !important;
+    z-index:999999 !important;
+}
